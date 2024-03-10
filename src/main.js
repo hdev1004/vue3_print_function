@@ -1,4 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import print from 'vue3-print-nb'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+app.use(print)
+
+app.mount('#app')
